@@ -14,7 +14,7 @@ RUN apk --update --no-cache add  \
 
 RUN apk add --no-cache \
             # We use the edge repository for texlive because the symlink to lualatex is missing in the 3.10 branch repo
-            --repository http://dl-cdn.alpinelinux.org/alpine/edge/main/ \
+            --repository http://dl-cdn.alpinelinux.org/alpine/edge/community/ \
             # Main TeX distribution
             texmf-dist \
             texmf-dist-latexextra \
