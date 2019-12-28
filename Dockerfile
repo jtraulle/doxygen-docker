@@ -26,9 +26,7 @@ RUN apk --update --no-cache add  \
     git config --global user.email "jtraulle@opencomp.fr" && \
     git config --global user.name "Jean Traullé" && \
     cd doxygen && \
-    git checkout tags/Release_1_8_16 -b Release_1_8_16 && \
-    # Applying patch for issue #7243
-    git cherry-pick 4fe4ce026d75972018516d81507ae20db9cdc589 && \
+    git checkout tags/Release_1_8_17 -b Release_1_8_17 && \
     # Compiling Doxygen
     mkdir build && \
     cd build && \
